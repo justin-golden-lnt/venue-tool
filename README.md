@@ -2,6 +2,8 @@
 
 A simple venue generation tool for ALMA
 
+*Designed for speed and ease of use*
+
 https://justin-golden-lnt.github.io/venue-tool/
 
 ### USAGE
@@ -16,9 +18,11 @@ Just enter:
 
 - Court Level
 
-and the venue xml file will be generated for you.
+The venue xml file will be generated for you.
 
 You can use the generate button to output the XML below. The copy button will generate and copy the XML to your clipboard, and the download button will generate and download the XML as a txt file.
+
+Note: Use <kbd>tab</kbd> and <kbd>shift</kbd> + <kbd>tab</kbd> to quickly navigate the inputs and buttons.
 
 ### NOTES
 
