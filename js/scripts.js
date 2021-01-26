@@ -1,7 +1,3 @@
-// todo: info modal, link to readme
-// toggle to download as txt/xml
-// validation: make sure venu and county aren't empty
-
 const court_levels = {
 	'Agency': 'AGCY',
 	'Apellate (Highest)': 'APHI',
