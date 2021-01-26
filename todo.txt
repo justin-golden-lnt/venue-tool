@@ -3,5 +3,5 @@ option to download as xml, option to minify output
 validation: make sure venue and county aren't empty
 notification that text was copied
 info modal
-better responsive design
 minify website?
+button to share website? button to email me?

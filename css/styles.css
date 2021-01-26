@@ -23,6 +23,8 @@ label, a, button, input, select, textarea {
 }
 textarea {
 	font-family: 'Courier New', monospace;
+	width: 15rem;
+	height: 10rem;
 }
 
 button, input, select, textarea {
@@ -43,6 +45,9 @@ button {
 button:hover {
 	background-color: #eee;
 }
+button svg, a svg {
+	height: 1rem;
+}
 label {
 	margin-right: 1rem;
 }
@@ -59,22 +64,27 @@ a:hover {
 
 @media (min-width: 640px) { /* sm */
 	textarea {
-		width: 15rem;
-		height: 10rem;
+		width: 30rem;
 	}
 }
 
 @media (min-width: 768px) { /* md */
 	textarea {
-		width: 30rem;
-		height: 20rem;
+		width: 45rem;
+		height: 15rem;
+	}
+
+	.sm-only {
+		display: none;
+	}
+	label {
+		margin-left: 2rem;
 	}
 }
 
 @media (min-width: 1024px) { /* lg */
 	textarea {
-		width: 45rem;
-		height: 30rem;
+		width: 60rem;
 	}
 }
 
