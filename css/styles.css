@@ -18,12 +18,19 @@ img, button {
 }
 
 body {
-	margin: 1rem;
-	text-align: center;
+	margin: 2rem;
 }
 h1 {
+	text-align: center;
 	font-weight: lighter;
 	letter-spacing: 0.1rem;
+}
+label, button, input, select, textarea {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+textarea {
+	font-family: 'Courier New', monospace;
 }
 
 @media (min-width: 640px) { /* sm */
