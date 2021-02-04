@@ -142,13 +142,16 @@ function getXML() {
 	let now = new Date();
 	let formated_date = `${now.getFullYear()}-${now.getMonth()+1}-${now.getDate()}`;
 
-	const full_name = document.getElementById('venue-name-input').value.trim();
-	const county = document.getElementById('county-name-input').value.trim();
+	let full_name = document.getElementById('venue-name-input').value.trim();
+	let county = document.getElementById('county-name-input').value.trim();
 	const state = document.getElementById('state-select').value;
 	const court_level = document.getElementById('court-level-select').value;
 
 	const state_code = 'USST_ROOT_' + states[state];
 	const court_level_code = 'CTLV_ROOT_' + court_levels[court_level];
+
+	full_name = escapeXml(full_name);
+	county = escapeXml(county);
 
 	return `<?xml version="1.0" encoding="UTF-8"?>
 	<TeamConnectRequest>
@@ -179,4 +182,17 @@ function getXML() {
 			</Address>
 		</Contact>
 	</TeamConnectRequest>`;
+}
+
+// https://stackoverflow.com/a/27979933
+function escapeXml(unsafe) {
+	return unsafe.replace(/[<>&'"]/g, function(c) {
+		switch (c) {
+			case '<': return '&lt;';
+			case '>': return '&gt;';
+			case '&': return '&amp;';
+			case '\'': return '&apos;';
+			case '"': return '&quot;';
+		}
+	});
 }
