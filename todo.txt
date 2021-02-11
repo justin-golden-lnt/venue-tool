@@ -5,3 +5,4 @@ notification that text was copied
 info modal
 minify website?
 button to share website? button to email me?
+url params
